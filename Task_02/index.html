@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dynamic Image Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>My Image Gallery</h1>
+    <nav>
+      <input type="text" id="searchInput" placeholder="Search by title..." />
+    </nav>
+  </header>
+
+  <!-- Description Section -->
+  <section id="description">
+    <p>Welcome to My Image Gallery — a modern, responsive platform to showcase your favorite images. Add, search, and manage photos effortlessly!</p>
+  </section>
+
+  <section id="add-image-form">
+    <h2>Add a New Image</h2>
+    <form id="imageForm">
+      <input type="text" id="imageTitle" placeholder="Image Title" required />
+      <input type="url" id="imageUrl" placeholder="Image URL" required />
+      <button type="submit">Add Image</button>
+      <p id="formError" class="error"></p>
+    </form>
+  </section>
+
+  <main id="gallery" class="gallery-grid">
+    <!-- Images will appear here dynamically -->
+  </main>
+
+  <section id="contact-section">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="contactMessage" class="success"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Image Gallery. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

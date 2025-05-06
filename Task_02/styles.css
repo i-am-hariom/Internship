@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #006d77;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav input {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  #add-image-form {
+    padding: 1rem;
+    background-color: #edf6f9;
+    text-align: center;
+  }
+  
+  #add-image-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  #add-image-form input,
+  #add-image-form button {
+    padding: 0.5rem;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  #add-image-form .error {
+    color: red;
+    font-size: 0.9rem;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(282px, 1rem));
+    
+    /* height: 300px; */
+    /* grid-template-columns:; */
+     
+    gap: 1rem;
+    padding: 1rem;
+    /* height: 100px;
+    width: 100px; */
+    /* width: 100%; */
+  }
+  
+  .gallery-item {
+    position: relative;
+    background: white;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    border-radius: 8px;
+    text-align: center;
+    /* width: 50%; */
+    /* height: auto; */
+    /* display: flex; */
+   
+    
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .gallery-item h3 {
+    margin: 0.5rem;
+  }
+  
+  .delete-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  /* Contact Form Styles */
+  #contact-section {
+    padding: 2rem 1rem;
+    background-color: #e0fbfc;
+    text-align: center;
+  }
+  
+  #contact-section h2 {
+    margin-bottom: 1rem;
+  }
+  
+  #contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  #contactForm input,
+  #contactForm textarea,
+  #contactForm button {
+    width: 90%;
+    max-width: 500px;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #contactForm button {
+    background-color: #006d77;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .success {
+    color: green;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  footer {
+    background-color: #023047;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  @media (max-width: 600px) {
+    nav input,
+    #add-image-form input,
+    #add-image-form button,
+    #contactForm input,
+    #contactForm textarea,
+    #contactForm button {
+      width: 90%;
+    }
+  }
+  
+  #description {
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* #gallary {
+    height: 100px;
+    width: 100px;
+  } */
+   main {
+    text-align: center;
+   }
