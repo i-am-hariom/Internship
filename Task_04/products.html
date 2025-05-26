@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Listing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Products</h1>
+    <div>
+      <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="todo.html">To-Do App</a>
+        <a href="products.html">Products</a>
+      </nav>
+    </div>
+  </header>
+
+<main>  <section class="product-section">
+    <h2>Browse Products</h2>
+    <input type="text" id="searchInput" placeholder="Search products...">
+    <select id="sortSelect" onchange="sortProducts()">
+      <option value="">Sort By</option>
+      <option value="price">Price</option>
+      <option value="rating">Rating</option>
+    </select>
+    <div id="productList" class="cards"></div>
+  </section>
+</main>
+
+  <footer>&copy; 2025 Hariom | Built with ❤️ and JavaScript</footer>
+  <script src="script.js"></script>
+</body>
+</html>

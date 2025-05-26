@@ -1,0 +1,192 @@
+
+
+/* Base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  /* background: #3B82F6; */
+  /* color: #333; */
+  color: #121212;
+  transition: background 0.3s, color 0.3s;
+  /* display: flex;
+  flex-direction: column;
+  min-height: 100vh; */
+   display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+
+/* Header */
+header {
+  /* background: #0077cc; */
+  background: #1F2937 ;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Theme Button */
+.theme-toggle {
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: none;
+  background: white;
+  color: #0077cc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #f0f0f0;
+  /* background: #3B82F6; */
+  
+}
+
+main {
+  /* flex: 1; */
+  height: 80vh;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+    
+}
+
+.card {
+  background: white;
+  /* background: #3B82F6; */
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 250px;
+  max-width: 300px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  /* background: #0077cc; */
+  background: #1F2937 ;
+  color: white; 
+  position: relative;
+  /* position:s; */
+}
+
+/* Inputs and Buttons */
+input[type="text"],
+select,
+button {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+input[type="text"]:focus,
+select:focus {
+  outline: none;
+  border-color: #0077cc;
+}
+
+/* To-Do Section */
+.todo-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+ul#taskList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+ul#taskList li {
+  padding: 10px;
+  margin: 5px auto;
+  background: #e0e0e0;
+  max-width: 400px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+ul#taskList li:hover {
+  background: #d6d6d6;
+}
+
+/* Product Section */
+.product-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Dark Mode Styles */
+body.dark-mode header {
+  background: #222;
+}
+
+body.dark-mode .card {
+  background: #1f1f1f;
+  color: #ccc;
+}
+
+body.dark-mode .hero,
+body.dark-mode .product-section,
+body.dark-mode .todo-section {
+  background: #181818;
+}
+
+body.dark-mode footer {
+  background: #222;
+}
+
+body.dark-mode input,
+body.dark-mode select {
+  background: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+body.dark-mode ul#taskList li {
+  background: #2c2c2c;
+}
